@@ -223,7 +223,7 @@ function Home({
                 </li>
                 <div className="language-menu">
                   <span className="language-info">
-                    {spanish ? "A2 - (Actualmente estudiándolo)" : "A2 - (Currently studying)"}
+                    {spanish ? "A2 - (Actualmente estudiándolo)" : "A2 - (Currently studying it)"}
                   </span>
                 </div>
               </div>
