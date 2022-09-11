@@ -710,7 +710,7 @@ home-container{
   position: relative;
   border-radius: var(--radius);
 
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   box-shadow: 5px 5px 9px #d5d5d5, -5px -5px 9px #ffffff;
   transition: var(--transition);
 }
@@ -723,9 +723,7 @@ home-container{
 
 
 }
-.social-media:last-child{
-  width: 100%;
-}
+
 
 
 .social-description p {
@@ -1035,6 +1033,13 @@ home-container{
 }
 
 @media only screen and (min-width: 820px) {
+  .social-media:last-child{
+    width: 100%;
+    
+  }
+  .social-media{
+    margin-bottom: 2rem;
+  }
   .landing-text{
     font-size: 3rem;
   }
