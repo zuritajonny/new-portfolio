@@ -42,7 +42,7 @@ function Home({
 
   return (
     <main className="home-container">
-      <Parallax pages={7.6} ref={ref} style={{ backgroundColor: `${illustrationColor}` }}>
+      <Parallax pages={7.8} ref={ref} style={{ backgroundColor: `${illustrationColor}` }}>
         <ParallaxLayer
           offset={0.7}
           speed={0.3}
@@ -80,19 +80,12 @@ function Home({
           }}
         ></ParallaxLayer>
 
-        {/*    <ParallaxLayer >
-          <div className="icon-container" onClick={goUp}>
-            <Icon.ArrowUp className="icon svg" />
-          </div>
-        </ParallaxLayer> */}
-        {/* 
-       <ParallaxLayer  offset={0} speed={0.1} >
-       
-        </ParallaxLayer> 
-        */}
+        <ParallaxLayer offset={0}  speed={0.2} style={{height: '6rem'}} sticky={{ start: 0, end: 0.1 }}>
+          <Header spanish={spanish} setSpanish={setSpanish} />
+        </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={0.9} /* factor={3}*/>
-          <Header spanish={spanish} setSpanish={setSpanish} />
+          
 
           <div className="welcome-text-container section">
             <div className="landing">
@@ -255,7 +248,7 @@ function Home({
                 <li>
                   {/* <img src={frFlag} alt="" className='flag-img'/> */}
                   <span>
-                    {spanish ? "Alta adaptabilidad" : "High-adaptability"}
+                    {spanish ? "Alta adaptabilidad" : "High adaptability"}
                   </span>
                 </li>
                 <li>
