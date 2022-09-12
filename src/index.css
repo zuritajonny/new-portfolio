@@ -150,12 +150,12 @@
   position: relative;
   display: flex;
   align-items: center;
-  height: 3rem;
+
 }
 
 .logo-img {
-  height: 100%;
-  width: 100%;
+  height: 3rem;
+  
   transition: var(--transition);
 }
 .overlay {
@@ -437,8 +437,13 @@ home-container{
   border-radius: var(--radius);
 }
 .languages-container {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
 }
+
 .full-row-container {
   display: flex;
   width: 100%;
@@ -518,10 +523,10 @@ home-container{
   margin-bottom: -3rem;
 }
 .language-li {
-  /*  box-shadow: var(--shadow-2); */
+  flex: 1 1 auto;
   position: relative;
   overflow: hidden;
-  margin: 1rem 1rem 2rem 1rem;
+  
   cursor: pointer;
   /*   */
   border-radius: var(--radius);
@@ -1043,6 +1048,7 @@ home-container{
   }
   .full-row-container{
     column-gap: 2rem;
+    padding: 0 10rem;
   }
   .social-media{
     margin-bottom: 2rem;
@@ -1052,22 +1058,16 @@ home-container{
   }
   .languages-container {
     display: flex;
-    justify-content: space-between;
-
+    flex-direction: row;
+    gap: 2rem;
     padding: 0 9rem;
+  }
+  .languages-container li {
+    flex: 1 1 10rem;
   }
   .languages li {
     display: flex;
     justify-content: center;
-  }
-}
-@media only screen and (min-width: 1080px) {
-  .social-media:last-child .social-wrapper{
-
-    justify-content: center;
-  }
-  .full-row-container {
-    padding: 0 10rem;
   }
   .left {
     left: 127px;
@@ -1075,10 +1075,21 @@ home-container{
   .right {
     right: 127px;
   }
-
-  .second-row {
-    grid-auto-columns: 37% !important;
+  .second-row{
+    grid-auto-columns: 14rem !important;
+    gap: 2rem;
   }
+  
+}
+@media only screen and (min-width: 1080px) {
+  .social-media:last-child .social-wrapper{
+
+    justify-content: center;
+  }
+ 
+
+
+
   .landing-text {
     font-size: 3.5rem;
   }
@@ -1130,9 +1141,7 @@ home-container{
     box-shadow: none !important;
   }
 
-  .languages-container li {
-    width: 14rem;
-  }
+ 
   .landing-area {
     border: none;
     padding: 1rem;
@@ -1209,6 +1218,9 @@ home-container{
       "j j j i i i"
       "j j j i i i"
       "j j j i i i";
+  }
+  .second-row{
+    grid-auto-columns: 37% !important;
   }
 }
 @media only screen and (min-width: 1920px) {

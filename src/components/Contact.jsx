@@ -9,7 +9,7 @@ function Contact({ spanish }) {
     <div className="contact-container  section">
       {spanish ? (
         <h1 className="title landing-text margin">
-          Contactame<br/><span><span></span>cuando gustes</span></h1>
+          Contáctame<br/><span><span></span>cuando gustes</span></h1>
       ) : (
         <h1 className="title landing-text margin">Feel free to contact me<br/><span><span></span>anytime</span></h1>
       )}

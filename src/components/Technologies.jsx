@@ -25,12 +25,12 @@ function AboutMe({
       className="technologies-container section"
     >
           {spanish ? (
-              <h1 className="title landing-text margin">La practica lo es <br/><span> <span></span>todo</span></h1>
+              <h1 className="title landing-text margin">La práctica lo es <br/><span> <span></span>todo</span></h1>
             ) : (
               <h1 className="title landing-text margin">Practice is <br/><span><span></span>everything</span></h1>
             )}
       <h1 className="title tec-title">
-        {spanish ? "¿Con cuáles tecnologías he trabajado?" : "Tecnologies I have worked with"}
+        {spanish ? "¿Con cuáles tecnologías he trabajado?" : "Tecnologies I have used over the years"}
       </h1>
       <div className="technologies-wrapper">
         <ul className="technologies-list">

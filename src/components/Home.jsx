@@ -34,7 +34,7 @@ function Home({
 
   const slideRight = () => {
     var slider = document.getElementById("slider");
-    slider.scrollLeft = slider.scrollLeft + 200;
+    slider.scrollLeft = slider.scrollLeft + 500;
   };
 
   const ref = useRef();
@@ -84,7 +84,7 @@ function Home({
           <Header spanish={spanish} setSpanish={setSpanish} />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0} speed={0.9} /* factor={3}*/>
+        <ParallaxLayer offset={0} speed={1} /* factor={3}*/>
           
 
           <div className="welcome-text-container section">
@@ -174,7 +174,7 @@ function Home({
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.5} speed={0.3}>
+        <ParallaxLayer offset={1.5} speed={1}>
           <div className="languages">
             {spanish ? (
               <h1 className="title landing-text margin">La comunicación es <br /><span> <span></span>clave</span></h1>
