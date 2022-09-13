@@ -273,7 +273,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.3} speed={0.5}>
+        <ParallaxLayer offset={4.3} speed={1}>
           <Portfolio
             portfolioRef={portfolioRef}
             animatePage={animatePage}
@@ -282,7 +282,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={6.8} speed={1}>
+        <ParallaxLayer offset={6.8} speed={0.7}>
           <Contact
             contactRef={contactRef}
             animatePage={animatePage}
@@ -291,7 +291,7 @@ function Home({
           />
         </ParallaxLayer>
         
-        <ParallaxLayer offset={7.5}  speed={0.5} onClick={() => ref.current.scrollTo(0)} 
+        <ParallaxLayer offset={7.5}  speed={0.1} onClick={() => ref.current.scrollTo(0)} 
         style={{
           height: '3rem',
           position: 'absolute',
