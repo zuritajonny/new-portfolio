@@ -42,7 +42,7 @@ function Home({
 
   return (
     <main className="home-container">
-      <Parallax pages={7.8} ref={ref} style={{ backgroundColor: `${illustrationColor}` }}>
+      <Parallax pages={8.1} ref={ref} style={{ backgroundColor: `${illustrationColor}` }}>
         <ParallaxLayer
           offset={0.7}
           speed={0.3}
@@ -282,7 +282,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={6.3} /* factor={0.3} */ speed={0.6}>
+        <ParallaxLayer offset={6.8} speed={1}>
           <Contact
             contactRef={contactRef}
             animatePage={animatePage}
@@ -291,7 +291,7 @@ function Home({
           />
         </ParallaxLayer>
         
-        <ParallaxLayer offset={7}  speed={1} onClick={() => ref.current.scrollTo(0)} 
+        <ParallaxLayer offset={7.5}  speed={0.5} onClick={() => ref.current.scrollTo(0)} 
         style={{
           height: '3rem',
           position: 'absolute',

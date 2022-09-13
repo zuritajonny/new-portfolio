@@ -9,9 +9,9 @@ function Contact({ spanish }) {
     <div className="contact-container  section">
       {spanish ? (
         <h1 className="title landing-text margin">
-          Contáctame<br/><span><span></span>cuando gustes</span></h1>
+          Contáctame,<br/><span><span></span>cuando gustes</span></h1>
       ) : (
-        <h1 className="title landing-text margin">Feel free to contact me<br/><span><span></span>anytime</span></h1>
+        <h1 className="title landing-text margin">Feel free to contact me,<br/><span><span></span>anytime</span></h1>
       )}
       <h1 className="title tec-title">
         {spanish ? "Estas son mis redes sociales" : "These are my social media"}
@@ -62,7 +62,7 @@ function Contact({ spanish }) {
 
               <li className="social-description">
                     <p>
-                      {spanish ? "Descarga mi currículum aquí" : "Download my resume!"}
+                      {spanish ? "Aprende sobre mi education, calificaciones, y experiencias previas" : "See my education, qualifications, and previous experiences"}
                     </p>
               </li>
               </div>
