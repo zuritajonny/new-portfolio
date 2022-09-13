@@ -282,7 +282,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={6.2} speed={0.7}>
+        <ParallaxLayer offset={6.2} speed={0.5}>
           <Contact
             contactRef={contactRef}
             animatePage={animatePage}
