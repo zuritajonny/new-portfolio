@@ -25,12 +25,12 @@
   --landing-height: 460px;
 }
 
-*::-webkit-scrollbar {
+/* *::-webkit-scrollbar {
   display: none;
 }
 *::active {
   background-color: none;
-}
+} */
 
 .header-container {
   /* border-bottom: var(--border-rgba);  */
@@ -1154,7 +1154,7 @@ home-container{
   }
   .landing {
     margin-top: 5rem;
-  }
+  } 
   .text {
     width: inherit;
   }
@@ -1236,8 +1236,8 @@ home-container{
   }
 }
 @media only screen and (min-width: 1920px) {
-  .welcome-text-container{
+/*   .welcome-text-container{
     height: 75%;
     align-items: center;
-  }
+  } */
 }

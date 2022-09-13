@@ -264,7 +264,7 @@ function Home({
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.7} speed={0.8}>
+        <ParallaxLayer offset={2.5} speed={0.8}>
           <Technologies
             tecnologiesRef={tecnologiesRef}
             animatePage={animatePage}
@@ -282,7 +282,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={6.8} speed={0.7}>
+        <ParallaxLayer offset={6.2} speed={0.7}>
           <Contact
             contactRef={contactRef}
             animatePage={animatePage}
