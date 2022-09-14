@@ -42,7 +42,7 @@ function Home({
 
   return (
     <main className="home-container">
-      <Parallax pages={8.1} ref={ref} style={{ backgroundColor: `${illustrationColor}` }}>
+      <Parallax pages={7.5} ref={ref} style={{ backgroundColor: `${illustrationColor}` }}>
         <ParallaxLayer
           offset={0.7}
           speed={0.3}
@@ -51,10 +51,39 @@ function Home({
             paddingTop: "2rem",
             backgroundImage: `url(${landingImg})`,
             backgroundColor: `${illustrationColor}`,
-            backgroundSize: " 100%",
+            backgroundSize: "100% 500px",
             width: "100%",
           }}
         ></ParallaxLayer>
+
+
+        <ParallaxLayer
+          offset={3}
+          speed={0.2}
+          factor={2}
+          style={{
+            backgroundImage: `url(${landingImg3})`,
+            backgroundColor: `${illustrationColor}`,
+            
+            backgroundSize: "100% 500px",
+            width: "100%",
+          }}
+        ></ParallaxLayer>
+
+        <ParallaxLayer
+          offset={6}
+          speed={1}
+          factor={2}
+          style={{
+            backgroundImage: `url(${landingImg2})`,
+            backgroundColor: `${illustrationColor}`,
+            backgroundSize: "95% 400px",
+
+            width: "100%",
+          }}
+        ></ParallaxLayer>
+
+
 
         {/*     <ParallaxLayer
           offset={2.2}
@@ -68,25 +97,13 @@ function Home({
           }}
         ></ParallaxLayer> */}
 
-        <ParallaxLayer
-          offset={3.5}
-          speed={0.4}
-          factor={2}
-          style={{
-            backgroundImage: `url(${landingImg3})`,
-            backgroundColor: `${illustrationColor}`,
-            backgroundSize: "100%",
-            width: "100%",
-          }}
-        ></ParallaxLayer>
+   
 
         <ParallaxLayer offset={0}  speed={0.2} style={{height: '6rem'}} sticky={{ start: 0, end: 0.1 }}>
           <Header spanish={spanish} setSpanish={setSpanish} />
         </ParallaxLayer>
 
         <ParallaxLayer offset={0} speed={1} /* factor={3}*/>
-          
-
           <div className="welcome-text-container section">
             <div className="landing">
               <h1 className="title landing-text">
@@ -174,7 +191,7 @@ function Home({
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={1.5} speed={1}>
+        <ParallaxLayer offset={1.3} speed={1}>
           <div className="languages">
             {spanish ? (
               <h1 className="title landing-text margin">La comunicación es <br /><span> <span></span>clave</span></h1>
@@ -264,7 +281,7 @@ function Home({
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2.5} speed={0.8}>
+        <ParallaxLayer offset={2.1} speed={0.6}>
           <Technologies
             tecnologiesRef={tecnologiesRef}
             animatePage={animatePage}
@@ -273,7 +290,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.3} speed={1}>
+        <ParallaxLayer offset={3.8} speed={1}>
           <Portfolio
             portfolioRef={portfolioRef}
             animatePage={animatePage}
@@ -282,7 +299,7 @@ function Home({
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={6.2} speed={0.5}>
+        <ParallaxLayer offset={5.3} speed={0.5}>
           <Contact
             contactRef={contactRef}
             animatePage={animatePage}
@@ -291,7 +308,7 @@ function Home({
           />
         </ParallaxLayer>
         
-        <ParallaxLayer offset={7.5}  speed={0.1} onClick={() => ref.current.scrollTo(0)} 
+        <ParallaxLayer offset={6.9}  speed={0.1} onClick={() => ref.current.scrollTo(0)} 
         style={{
           height: '3rem',
           position: 'absolute',

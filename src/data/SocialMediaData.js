@@ -2,7 +2,7 @@ export const SocialMediaData = [
   {
     logo: "icons/gmailIcon.svg",
     name: "Email",
-    descriptionEN: "Send me an email!",
+    descriptionEN: "Send me a direct email!",
     descriptionES: "Enviame un correo electrónico!",
     divcName: "social-media",
     imgcName: "img",

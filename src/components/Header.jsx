@@ -7,7 +7,6 @@ import portfolio from "../media/portfolio.svg";
 import tecnologies from "../media/tecnologies.svg";
 
 function Header({
-
   renderCase,
   setRenderCase,
   goUp,
@@ -17,7 +16,6 @@ function Header({
   tecnologiesRef,
   portfolioRef,
   contactRef,
-
 }) {
 
 
